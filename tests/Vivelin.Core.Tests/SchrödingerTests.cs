@@ -7,9 +7,10 @@ public class SchrödingerTests
     {
         var values = new[] { "Bulbasaur", "Charmander", "Squirtle" };
         var instance = new Schrödinger<string>(values);
-        var mockRandom = Mock.Of<Random>(x => x.Next(2) == 0);
+        var random = Substitute.For<Random>();
+        random.Next(2).Returns(0);
 
-        instance.Resolve(mockRandom).Should().Be("Bulbasaur");
+        instance.Resolve(random).Should().Be("Bulbasaur");
     }
 
     [Fact]

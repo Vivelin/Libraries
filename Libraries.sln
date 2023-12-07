@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34321.82
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vivelin.Core", "src\Vivelin.Core\Vivelin.Core.csproj", "{086D3637-D9E3-4980-8C50-1ABDFA99AAF3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vivelin.Core", "src\Vivelin.Core\Vivelin.Core.csproj", "{086D3637-D9E3-4980-8C50-1ABDFA99AAF3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{55F80F8C-2CFB-4E4B-A4C7-373376BB8BF5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vivelin.Core.Tests", "tests\Vivelin.Core.Tests\Vivelin.Core.Tests.csproj", "{2E7E3540-851C-4351-8644-B9F946E9F42E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vivelin.Core.Tests", "tests\Vivelin.Core.Tests\Vivelin.Core.Tests.csproj", "{2E7E3540-851C-4351-8644-B9F946E9F42E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
