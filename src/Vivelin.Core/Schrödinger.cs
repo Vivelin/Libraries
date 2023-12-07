@@ -4,6 +4,8 @@ namespace Vivelin;
 
 public class Schrödinger<T>
 {
+    private static readonly bool s_isWeighted = typeof(T).IsAssignableTo(typeof(IWeighted));
+
     public Schrödinger(ReadOnlySpan<T> values)
     {
         Values = ImmutableList.Create(values);
@@ -20,7 +22,11 @@ public class Schrödinger<T>
 
     public T Resolve(Random rng)
     {
-        var index = rng.Next(Values.Count);
-        return Values[index];
+        if (s_isWeighted)
+        {
+            return (T)Values.Cast<IWeighted>().WeightedSample(rng);
+        }
+
+        return Values.Sample(rng);
     }
 }
