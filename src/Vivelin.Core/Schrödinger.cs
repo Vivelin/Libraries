@@ -1,6 +1,6 @@
 ﻿using System.Collections.Immutable;
 
-namespace Vivelin.Core;
+namespace Vivelin;
 
 public class Schrödinger<T>
 {
