@@ -1,4 +1,4 @@
-﻿namespace Vivelin;
+﻿namespace Vivelin.Luck;
 
 public interface IWeighted
 {

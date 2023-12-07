@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics;
 
-namespace Vivelin;
+namespace Vivelin.Luck;
 
 public static class EnumerableExtensions
 {

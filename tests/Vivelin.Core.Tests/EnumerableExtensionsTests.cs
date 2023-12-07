@@ -1,4 +1,6 @@
-﻿namespace Vivelin.Core.Tests;
+﻿using Vivelin.Luck;
+
+namespace Vivelin.Core.Tests;
 
 public class EnumerableExtensionsTests
 {

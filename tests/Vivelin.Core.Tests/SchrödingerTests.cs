@@ -1,3 +1,5 @@
+using Vivelin.Luck;
+
 namespace Vivelin.Core.Tests;
 
 public class SchrödingerTests
