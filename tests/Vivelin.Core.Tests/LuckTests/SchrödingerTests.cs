@@ -18,7 +18,7 @@ public class SchrödingerTests
     [Fact]
     public void SchrodingersString_ImplicitlyResolvesToRandomString()
     {
-        var values = new[] { "Bulbasaur", "Charmander", "Squirtle" };
+        var values = new List<string>(["Bulbasaur", "Charmander", "Squirtle"]);
         var instance = new Schrödinger<string>(values);
 
         // Avoiding FluentAssertions here to demonstrate implicit usage

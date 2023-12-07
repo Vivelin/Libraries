@@ -6,9 +6,9 @@ public class Schrödinger<T>
 {
     private static readonly bool s_isWeighted = typeof(T).IsAssignableTo(typeof(IWeighted));
 
-    public Schrödinger(ReadOnlySpan<T> values)
+    public Schrödinger(IEnumerable<T> values)
     {
-        Values = ImmutableList.Create(values);
+        Values = values.ToImmutableList();
     }
 
     public ImmutableList<T> Values { get; }
